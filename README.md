@@ -10,6 +10,6 @@ It uses heuristics for sentence ends:
 * Word with punctuation mark isn't known abbreviation
 * Following word with capitalization is known sentence begin word, e.g. The
 * Sentence length is at least so many characters
-* Sentence lenght is no more than so many characters.
+* Sentence length is no more than so many characters.
 
 We rank possible endings and pick the highest one.
