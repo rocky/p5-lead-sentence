@@ -3,7 +3,7 @@ Some Perl code I wrote when I worked at the Associated Press to find the leading
 It uses heuristics for sentence ends:
 
 * Space or quote and space after a dot
-* Not space before puctuation mark
+* Not space before punctuation mark
 * Word with punctuation mark isn't capitalized (could be an abbreviation)
 * Word after space is capitalized (Next word starts a sentence)
 * Word with punctuation mark isn't capitalized (could be an abbreviation)
