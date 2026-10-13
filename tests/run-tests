@@ -1,8 +1,9 @@
-#!/bin/csh
-# 	$Id: run-tests,v 1.2 2005/06/22 00:44:46 rocky Exp $	
-set program="../lead_sentence.pl"
-foreach file ( {brief*,bug*,test*} )
+#!/bin/bash
+# 	$Id: run-tests,v 1.2 2005/06/22 00:44:46 rocky Exp $
+cd $(dirname ${BASH_SOURCE[0]})
+program="../lead_sentence.pl"
+for file in {brief*,bug*,test*}; do
     echo "${file}:"
     $program -rating --ellipsis --nl --file $file
     echo "------------"
-end
+done
